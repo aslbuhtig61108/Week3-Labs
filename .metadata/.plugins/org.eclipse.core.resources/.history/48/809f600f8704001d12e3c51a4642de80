@@ -99,42 +99,23 @@ public class Part1 {
 		
 		// Write and test a method that takes a String and an int
 		// and returns true if the number of letters is the string is greater than the int
+		String m = "Christian";
+		int num1 = 5;
 		
-	//	checkStrLongerThanNumber("Christian", 5);
-	//	System.out.println(checkStrLongerThanNumber("Christian", 5));
-	//	
-	//	
-	//}
-	//	
-	//	public static boolean checkStrLongerThanNumber(String str1, int nbr) {
-	//		if (str1.length() > nbr) {
-	//			return true;
-	//		} else {   // this can be omitted since if the condition evaluates to false, it implicitly proceeds to the 'return false'
-	//			return false; 
-	//		}
-	//	}
-	
-	   // Alterntaively since the return value is boolean and the condition evaluates to boolean, we can narrow
-	   // the lines to 'return (str1.length() > nbr'
+		checkStrLongerThanNumber(m, num1);
+		boolean result = checkStrNumber(m, num1);
+		System.out.println(result);
 		
-	   // Write and test a method that takes an array of strings and a string and
-	   // returns true if the string passed in exists in the array
-	    String[] names = {"Clara", "Sophie", "Luis", "John", "Leslie"};
-	   String p = "Luis";
-	   
-	    System.out.println(isStringFoundInArray (p, allNames));
-	   
+		
 	}
-        public static boolean isStringFoundInArray (String q, String[] names) {
-        	for (String nam : names) {
-        		if (nam.equals(q)) {
-        			return true;
-        	} 
-        	}
-        	return false;
-        	
-        }
-	   
+		
+		public static boolean checkStrLongerThanNumber(String str1, int nbr) {
+			if (str1.length() > nbr) {
+				return();
+			}
+		}
+	
+	
 		public static String greet1(String y) {
 			return "Kumusta, " + y + "!";
 		}

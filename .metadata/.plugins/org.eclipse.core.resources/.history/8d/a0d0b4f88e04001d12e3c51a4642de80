@@ -120,9 +120,8 @@ public class Part1 {
 	   // Write and test a method that takes an array of strings and a string and
 	   // returns true if the string passed in exists in the array
 	    String[] names = {"Clara", "Sophie", "Luis", "John", "Leslie"};
-	   String p = "Luis";
+	   // String p = "Luis";
 	   
-	    System.out.println(isStringFoundInArray (p, allNames));
 	   
 	}
         public static boolean isStringFoundInArray (String q, String[] names) {
@@ -130,7 +129,6 @@ public class Part1 {
         		if (nam.equals(q)) {
         			return true;
         	} 
-        	}
         	return false;
         	
         }

@@ -122,7 +122,7 @@ public class Part1 {
 	    String[] names = {"Clara", "Sophie", "Luis", "John", "Leslie"};
 	   String p = "Luis";
 	   
-	    System.out.println(isStringFoundInArray (p, allNames));
+	    System.out.println(isStringFoundInArray (p, names));
 	   
 	}
         public static boolean isStringFoundInArray (String q, String[] names) {
