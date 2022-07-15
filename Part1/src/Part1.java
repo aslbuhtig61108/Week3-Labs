@@ -70,13 +70,44 @@ public class Part1 {
 		}
 		System.out.println(sumOfLetters);
 		
-		// 
+				
 		
+		// PART 2 continuation
+		// write and test a method that takes a String name 
+		// and prints out a greeting, this method returns nothing
 		
+		String name = "Ed";
+		String name1 = "Adrian";
+		greet(name);
+		
+		// write and test a method that takes a String name and
+		// returns a greeting. do not print in the method
+		
+		// greet1(name1);
+		// System.out.println(greet1(name1));
+		
+		// alternatively the above can be explicitly expressed
+		// using a variable
+		String greet3 = greet1(name1);
+		System.out.println(greet3);
+		
+		// Compare the two methods. What is the difference?
+		// Answer: The difference between the two similar methods is
+		// that the first method prints in the method while
+		// while the second method prints from 
+		// the main code using the 'return' value
 		
 		
 		
 	}
+		
+		public static String greet1(String y) {
+			return "Kumusta, " + y + "!";
+		}
+	
+		public static void greet(String x) {
+			System.out.println("Good afternoon, " + x + "!");
+		}
 	
 
 }
