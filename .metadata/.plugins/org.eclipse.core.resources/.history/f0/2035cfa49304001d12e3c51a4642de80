@@ -83,8 +83,8 @@ public class Part1 {
 		// write and test a method that takes a String name and
 		// returns a greeting. do not print in the method
 		
-		greet1(name1);
-		System.out.println(greet1(name1));
+		// greet1(name1);
+		// System.out.println(greet1(name1));
 		
 		// alternatively the above can be explicitly expressed
 		// using a variable
@@ -101,9 +101,19 @@ public class Part1 {
 		// and returns true if the number of letters is the string is greater than the int
 		
 	    checkStrLongerThanNumber("Christian", 5);
-	    System.out.println("This is " + checkStrLongerThanNumber("Christian", 5));
+	    System.out.println(checkStrLongerThanNumber("Christian", 5));
 		
-			
+		
+		}
+		
+		public static boolean checkStrLongerThanNumber(String str1, int nbr) {
+			if (str1.length() > nbr) {
+				return true;
+			} else {   // this can be omitted since if the condition evaluates to false, it implicitly proceeds to the 'return false'
+				return false; 
+			}
+		}
+	
 	    // Alterntaively since the return value is boolean and the condition evaluates to boolean, we can narrow
 	    // the lines to 'return (str1.length() > nbr'
 		
@@ -111,31 +121,13 @@ public class Part1 {
 	    // returns true if the string passed in exists in the array
 	    String[] names = {"Clara", "Sophie", "Luis", "John", "Leslie"};
 	    String p = "Luis";
-	 
-	    System.out.println("This is : " + isStringInArray (p, allNames));
-	    
-	    
+	   
 	
-	} // This is the END OF THE Main PROGRAM
+
 	
 	// LIST OF METHODS CREATED FOR THIS LAB EXCERCISE
-		
-		public static boolean isStringInArray(String q, String[] names) {
-			for (String name : names) {
-				if (q.equals(name)) {
-					return true;
-				}
-			} return false;
-			
-		}
 	
-	    public static boolean checkStrLongerThanNumber(String str1, int nbr) {
-			if (str1.length() > nbr) {
-				return true;
-			} else {   // this can be omitted since if the condition evaluates to false, it implicitly proceeds to the 'return false'
-				return false; 
-			}
-		}
+	    
 	   
 		public static String greet1(String y) {
 			return "Kumusta, " + y + "!";

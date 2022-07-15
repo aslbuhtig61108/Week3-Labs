@@ -112,7 +112,7 @@ public class Part1 {
 	    String[] names = {"Clara", "Sophie", "Luis", "John", "Leslie"};
 	    String p = "Luis";
 	 
-	    System.out.println("This is : " + isStringInArray (p, allNames));
+	    System.out.println("This is : " + isStringInArray (p, names));
 	    
 	    
 	

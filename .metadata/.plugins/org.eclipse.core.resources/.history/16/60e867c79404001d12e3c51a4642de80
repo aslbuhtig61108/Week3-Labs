@@ -112,7 +112,7 @@ public class Part1 {
 	    String[] names = {"Clara", "Sophie", "Luis", "John", "Leslie"};
 	    String p = "Luis";
 	 
-	    System.out.println("This is : " + isStringInArray (p, allNames));
+	    isStringInArray (p, names);
 	    
 	    
 	
@@ -121,11 +121,6 @@ public class Part1 {
 	// LIST OF METHODS CREATED FOR THIS LAB EXCERCISE
 		
 		public static boolean isStringInArray(String q, String[] names) {
-			for (String name : names) {
-				if (q.equals(name)) {
-					return true;
-				}
-			} return false;
 			
 		}
 	
