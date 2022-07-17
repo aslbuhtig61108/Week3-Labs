@@ -145,7 +145,7 @@ public class Part1 {
 	    System.out.println(hasMoreEvenWordCharacters(allNames));
 	    
 	    // write and test a method that takes a string and returns true if the string is a palindrome.
-	    System.out.println(isPalindrome("racecar"));
+	    
 	    
 	    
 	
@@ -158,13 +158,14 @@ public class Part1 {
 		// wow
 		// mom
 		// first char = last char; second char = second to the last; etc.
-		for (int i = 0; i < string.length() / 2; i++) {
+		for (int i = 0; i < string.length(); i++) {
 			if (string.charAt(i) != string.charAt(string.length()-i-1)) {
 				return false;
 			}
-				
+			
+			
 		}
-		return true; 
+		
 		
 		
 	}
