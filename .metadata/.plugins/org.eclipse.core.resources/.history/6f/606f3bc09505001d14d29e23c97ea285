@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class numbers1 {
+
+	public static void main(String[] args) {
+		 // Using a user provided word, create a new array that is made up of 
+	    // the characters of the word stored in the variable userWord. Once you 
+	    // have created that array, print to the console each element of the array.
+
+	    Scanner kb = new Scanner(System.in);
+	    String userWord = kb.next();
+	    System.out.println("The word is : " + userWord);
+	    
+	    int wordLength = userWord.length();
+	    System.out.println(wordLength);
+	    
+	    // This is the new array that will be made up of the letters of the userWord
+	    String[] wordArray = new String[wordLength];
+	    
+	    // System.out.println(wordArray.length);
+	    
+	    // for (int d = 0; d < wordLength; d++) {
+		//   wordArray[d] = userWord.charAt(d);	    	
+	     }
+	    
+	    
+	    
+	    
+
+	    
+	}
+
+}

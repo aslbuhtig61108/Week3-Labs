@@ -17,6 +17,7 @@ public class Part1 {
 		int[] numbers = {1, 5, 2, 8, 13, 6};
 		System.out.println(numbers[0]);
 		
+		System.out.println(numbers);
 				
 		// print out first element of the array
 		System.out.println(numbers[0]);
@@ -109,41 +110,102 @@ public class Part1 {
 		
 	    // Write and test a method that takes an array of strings and a string and
 	    // returns true if the string passed in exists in the array
-	    String[] names = {"Clara", "Sophie", "Luis", "John", "Leslie"};
+	    // String[] names2 = {"Clara", "Sophie", "Luis", "John", "Leslie"};
 	    String p = "Luis";
 	 
 	    System.out.println("This is : " + isStringInArray (p, allNames));
+	    
+	    
+	    // Write and test a method that takes an array of int and returns 
+	    // the smallest number in the array
+	    
+	    int[] randomnumbers = {8, 95, 31, 5, 1, -2, 54, 19, 51};
+	    
+	    // System.out.println(randomnumbers[2]);
+	    System.out.println(getSmallestNumberInArray(randomnumbers)); 
+	 
+	    
+	    
+	// 	PART 3 continuation
+	    
+	    // write and test a method that takes an array of doubles and returns the average
+	    double[] doubles = {23.52, 32.54, 54.23};
+	    System.out.println(getAverageOfDoubles(doubles));
+	    
+	    // Write and test a method that takes an array of Strings and returns an array of int where each element 
+	    // matches the length of the string at that position
+	    // Will use the String array allNames for this exercise
+	    int[] nameLengths = (captureArrayIntLength(allNames));
+	    for (int len : nameLengths) {
+	    	System.out.println(len);	
+	    }
+	    
+	    // write and test a method that takes an array of Strings and returns true if the sum of the letters for all strings with an 
+	    // even amount of letters is gerater than the sum of those with an odd amount of letters
+	    
+	    
+	    // write and test a method that takes a string and returns true if the string is a palindrome.
+	    
 	    
 	    
 	
 	} // This is the END OF THE Main PROGRAM
 	
 	// LIST OF METHODS CREATED FOR THIS LAB EXCERCISE
-		
-		public static boolean isStringInArray(String q, String[] names) {
-			for (String name : names) {
-				if (q.equals(name)) {
-					return true;
-				}
-			} return false;
-			
-		}
+
 	
-	    public static boolean checkStrLongerThanNumber(String str1, int nbr) {
-			if (str1.length() > nbr) {
+	
+	public static void greet(String x) {
+		System.out.println("Good afternoon, " + x + "!");
+	}
+    
+	public static String greet1(String y) {
+		return "Kumusta, " + y + "!";
+	}
+	
+    public static boolean checkStrLongerThanNumber(String str1, int nbr) {
+		if (str1.length() > nbr) {
+			return true;
+		} else {   // this can be omitted since if the condition evaluates to false, it implicitly proceeds to the 'return false'
+			return false; 
+		}
+	}
+
+	public static boolean isStringInArray(String q, String[] names2) {
+		for (String name : names2) {
+			if (q.equals(name)) {
 				return true;
-			} else {   // this can be omitted since if the condition evaluates to false, it implicitly proceeds to the 'return false'
-				return false; 
 			}
+		} return false;
+		
+	}	
+		public static int getSmallestNumberInArray (int[] numbers) {
+			int smallNumber = numbers[0];
+			for (int number : numbers) {
+				if (number < smallNumber) {
+					smallNumber = number;
+				}
+			}
+			return smallNumber;
 		}
-	   
-		public static String greet1(String y) {
-			return "Kumusta, " + y + "!";
+
+		public static double getAverageOfDoubles(double[] array) {
+			double sum3 = 0;
+			for (double number : array) {
+				sum3 += number;
+			}
+			return sum3/array.length;
 		}
+		
+		public static int[] captureArrayIntLength(String[] fullNames) {
+			int[] strLengths = new int[fullNames.length];
+			for (int m = 0; m < fullNames.length; m++) {
+				strLengths[m] = fullNames[m].length();
+			}
+			return strLengths;
+		}
+
 	
-		public static void greet(String x) {
-			System.out.println("Good afternoon, " + x + "!");
-		}
 	
 
 }
