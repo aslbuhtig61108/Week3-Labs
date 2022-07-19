@@ -148,12 +148,7 @@ public class Part1 {
 	    System.out.println(isPalindrome("racecar"));
 	    
 	    
-	    /*
-	     * About Characters
-	     * string.charAT()
-	     *  
-	     */
-	    	
+	
 	} // This is the END OF THE Main PROGRAM
 	
 	// LIST OF METHODS CREATED FOR THIS LAB EXCERCISE
